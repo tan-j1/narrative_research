@@ -14,6 +14,8 @@ conda create -p xxx\narrative_research python=3.11.8
 
 conda activate xxx
 
+conda deactivate
+
 python --version
 
 conda env list
