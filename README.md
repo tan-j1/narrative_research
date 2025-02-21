@@ -82,3 +82,20 @@ conda install pytorch==2.3.1 torchvision torchaudio  pytorch-cuda=11.8 -c pytorc
 9、代码9-14用于内容一致性、情感一致性、内容多样性和情感多样性的测度
 
 10、代码15用于最后的回归分析和结果（表格结果、热力图结果等）输出
+
+关于数据和代码的关系：经过飞书后最初是装有每一季对应的word文档和视频文件的文件夹，“Shark Tank 第十三季 全集”、“Shark Tank 第十四季 全22集”、“Shark Tank 第十五季第7集已更新”
+
+更改输入路径运行代码1将文本文档变成txt文档，就变成了装有每一季txt文本的文件夹，“raw_data season13”、“raw_data season14”、“raw_data season15”
+
+更改输入路径运行代码2将每集开头冗余部分去掉，仍然是装有每一季txt文本的文件夹，“raw_data season13_1”、“raw_data season14_1”、“raw_data season15_1”
+
+更改输入路径运行代码3将每集再划分为多个项目（一般一集有4个创业项目），就变成了“raw_data season13_2”、“raw_data season14_2”、“raw_data season15_2”
+
+更改输入路径运行代码4统一项目命名规则，就变成了“raw_data season13_3”、“raw_data season14_3”、“raw_data season15_3”
+
+更改输入路径运行代码5按时间和说话人将txt文件转换为csv文件，就变成了“processed_data_season13”、“processed_data_season14”、“processed_data_season15”
+
+后面就是根据这些原始数据进行自变量的测度和最终分析表的构建啦，运行7后按照file_name字段进行手工编码team和因变量，然后依次运行7、8、9、10就能输出最终分析表和回归结果啦！
+
+
+
