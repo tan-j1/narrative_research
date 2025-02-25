@@ -61,11 +61,11 @@ conda install pytorch==2.3.1 torchvision torchaudio  pytorch-cuda=11.8 -c pytorc
 
 ①把文件从docx格式转换为txt格式
 
-②把每集开头的冗余部分去掉
+②把每集开头的冗余部分去掉（2.0：增加了匹配模式Who are the sharks（5、7季节适用））
 
 ③按照项目分割每集的文件
 
-④更改统一文件名
+④更改统一文件名（2.0：不再用位置定位，而是用正则表达式定位E和S这样更具有普适性）
 
 ⑤按时间和说话人将txt文件转换为csv文件
 
